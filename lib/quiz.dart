@@ -10,7 +10,7 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  vargit push -u origin main activeScreen = 'start-screen';
+  var activeScreen = 'start-screen';
 
   void switchScreen() {
     setState(() {

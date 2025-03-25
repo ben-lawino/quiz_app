@@ -13,7 +13,7 @@ class ResultsScreen extends StatelessWidget {
     required this.onRestart,
   });
 
-  List<Map<String, Object>> getSummaryData() {
+  List<Map<String, Object>> get summaryData {
     final List<Map<String, Object>> summary = [];
 
     for (var i = 0; i < chosenAnswers.length; i++) {
@@ -29,7 +29,6 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final summaryData = getSummaryData();
     final numTotalQuestions = questions.length;
     final numCorrectQuestions =
         summaryData.where((data) {
